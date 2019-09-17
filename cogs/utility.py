@@ -308,7 +308,7 @@ class Utility(commands.Cog):
         embed.add_field(name="Uptime", value=self.bot.uptime)
         embed.add_field(name="Latency", value=f"{self.bot.latency * 1000:.2f} ms")
         embed.add_field(name="Version", value=f"`{self.bot.version}`")
-        embed.add_field(name="Author", value="[`kyb3r`](https://github.com/kyb3r)")
+        embed.add_field(name="Owner", value="[`ClearlyElevated`](https://github.com/ClearlyElevated)")
 
         changelog = await Changelog.from_url(self.bot)
         latest = changelog.latest_version
@@ -319,16 +319,16 @@ class Utility(commands.Cog):
             footer = "You are up to date with the latest version."
 
         embed.add_field(
-            name="GitHub", value="https://github.com/kyb3r/modmail", inline=False
+            name="Author", value="https://github.com/kyb3r/modmail", inline=False
         )
 
         embed.add_field(
-            name="Discord Server", value="https://discord.gg/F34cRU8", inline=False
+            name="Discord Server", value="https://discord.io/underground_server", inline=False
         )
 
         embed.add_field(
             name="Donate",
-            value="Support this bot on [`Patreon`](https://patreon.com/kyber).",
+            value="Support this bot on [`Patreon`](https://patreon.com/ClearlyElevated).",
         )
 
         embed.set_footer(text=footer)
